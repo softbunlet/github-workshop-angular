@@ -23,7 +23,7 @@ jobs:
             - id: s6
               run: ls -l dist/countingbook
             - id: s7
-              run: nwtgck/actions-netlify@v3.0
+              use: nwtgck/actions-netlify@v3.0
               with:
                 publish-dir: './dist/countingbook/browser'
                 production-deploy: true
